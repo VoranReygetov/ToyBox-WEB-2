@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inika', sans-serif;
+
+}
+/* .header-wrapper{
+    background-color: rgba(195, 255, 193, 1);
+} */
+.main-icon {
+    width: 94px;
+    height: 94px;
+}
+.small-icon {
+    width: 68px;
+    height: 68px;
+}
+.bg-small-icons{
+    display: inline-block;
+    background: rgba(11, 162, 81, 1);
+}
+.goods-pics{
+    width: 94px;
+    height: 94px;
+}

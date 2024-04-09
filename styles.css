@@ -1,25 +1,72 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Inika', sans-serif;
+    font-family: "Tilt Neon", sans-serif;
 
 }
-/* .header-wrapper{
-    background-color: rgba(195, 255, 193, 1);
-} */
+.header-wrapper{
+    background: linear-gradient(rgba(195, 255, 193, 1), rgba(117, 153, 116, 1));
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Add padding to create some space between elements */
+}
+.box-logo-search-bar{
+    flex:2;
+}
+.logo-with-text{
+    display: flex;
+    text-align: center;
+}
+.box-user-icons{
+    flex:1;
+    justify-content: space-between;
+}
 .main-icon {
-    width: 94px;
-    height: 94px;
+    height: 76px;
 }
-.small-icon {
-    width: 68px;
-    height: 68px;
-}
-.bg-small-icons{
+.bg-small-icons {
+    /* background: linear-gradient(rgba(11, 162, 81, 1), rgba(115, 115, 115, 1)); */
+    background: rgba(198, 198, 198, 1);
     display: inline-block;
-    background: rgba(11, 162, 81, 1);
+    width: 64px;
+    height: 64px;
+    border-style: solid;
+    border-color: rgba(94, 94, 94, 1);
+    border-radius: 50%;
+    border-width: 2px;
+    position: relative; /* Add position relative to enable absolute positioning */
 }
+
+.small-icon {
+    position: absolute;
+    top: 50%; /* Align to the center vertically */
+    left: 50%; /* Align to the center horizontally */
+    transform: translate(-50%, -50%); /* Center the icon */
+    width: 70%; /* Adjust the size relative to the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .goods-pics{
     width: 94px;
     height: 94px;
+}
+
+.search-bar, .button-search {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+.search-bar {
+    background: rgba(236, 236, 236, 1);
+    width: 100%;
+    margin-right: 5px;
+}
+
+.button-search {
+    background: rgba(140, 140, 140, 1);
 }

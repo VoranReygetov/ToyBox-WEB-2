@@ -10,7 +10,7 @@ h1, h2, p, li, ul, table{
 ul{
     list-style: none;
 }
-a{
+a[href] {
     color: #3e77aa;
     cursor: pointer;
     text-decoration: none;
@@ -224,11 +224,8 @@ a:hover{
 }
 
 .menu-categories{
-    position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin: 0px;
-    box-sizing: border-box;
     padding-left: 12px;
     border: 1px solid gray;
     border-top: none;
@@ -249,7 +246,7 @@ a:hover{
 
 .menu-categories__link{
     position: relative;
-     z-index: 10;
+    z-index: 10;
     display: inline-block;
     vertical-align: bottom;
     width: 100%;
@@ -262,58 +259,6 @@ a:hover{
 
 .icons-ref-text{
     font-size: 12px;
-}
-
-.simple-slider{
-    position: relative;
-    width: 100%;
-    display: flex;
-    
-    flex-direction: column;
-}
-.simple-slider__holder{
-    overflow: hidden;
-    flex-grow: 1;
-    overflow-x: auto;
-    overflow-y: hidden;
-    transition: max-height linear .25s;
-}
-
-.simple-slider__list{
-    transform: translate3d(-14703px, 0px, 0px);
-    transition-duration: 500ms;
-    display: flex;
-    transition-property: transform;
-}
-
-.simple-slider__item{
-    width: 1131px;
-    flex-shrink: 0;
-}
-
-.main-slider{
-    background: rgb(255, 255, 255);
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-}
-
-.main-slider__slide-inner{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-}
-
-.container-slider{
-    padding: 2rem;
-}
-
-.slider-wrapper{
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
 }
 
 .slider{
@@ -352,7 +297,7 @@ a:hover{
     justify-content: space-between;
 }
 
-.buttons button{
+#prev, #next{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -364,10 +309,12 @@ a:hover{
     font-weight: bold;
     transition: 0.25s;
 }
-.buttons button:hover{
+
+#prev:hover, #next:hover{
     background-color: gray;
     cursor: pointer;
 }
+
 .dots{
     position: absolute;
     bottom: 10px;
@@ -393,6 +340,7 @@ a:hover{
     background-color: gray;
     cursor: pointer;
 }
+
 .dots li.active{
     width: 30px;
 }
